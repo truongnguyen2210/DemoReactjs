@@ -15,17 +15,21 @@ function App() {
         <
         p >
         <
-        Todoitem / >
-        Edit < code > src / App.js < /code> and save to reload. <
-        /p> <
+        Todoitem title = "Learn English" / >
+        <
+        Todoitem title = "Learn JavaScript" / >
+        <
+        Todoitem title = "Learn Reactjs" / >
+        Edit < code > src / App.js < /code> and save to reload. < /
+        p > <
         a className = "App-link"
         href = "https://reactjs.org"
         target = "_blank"
         rel = "noopener noreferrer" >
 
         <
-        /a> <
-        /header> <
+        /a> < /
+        header > <
         /div>
     );
 }

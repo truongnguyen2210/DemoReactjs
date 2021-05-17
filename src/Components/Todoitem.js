@@ -4,7 +4,7 @@ class Todoitem extends Component {
         return ( <
             div className = "Todoitem" >
             <
-            p > Learn English < /p> <
+            p > { this.props.title } < /p> <
             /div>
         );
     }
