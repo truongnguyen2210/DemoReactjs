@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Todoitem from './Components/Todoitem';
+let todos = [
+    "Learn English",
+    "Learn JavaScript",
+    "Learn English",
+    "Learn Reactjs"
+];
 
 function App() {
     return ( <
@@ -13,25 +19,26 @@ function App() {
         className = "App-logo"
         alt = "logo" / >
         <
-        p >
-        <
-        Todoitem title = "Learn English" / >
-        <
-        Todoitem title = "Learn JavaScript" / >
-        <
-        Todoitem title = "Learn Reactjs" / >
-        Edit < code > src / App.js < /code> and save to reload. < /
-        p > <
-        a className = "App-link"
-        href = "https://reactjs.org"
-        target = "_blank"
-        rel = "noopener noreferrer" >
+        p > {
+            todos.map((item, index) => < Todoitem key = { index }
+                title = { item }
+                />)
+            }
+            Edit < code > src / App.js < /code> and save to reload. <
+            /p> <
+            a
+            className = "App-link"
+            href = "https://reactjs.org"
+            target = "_blank"
+            rel = "noopener noreferrer" >
 
-        <
-        /a> < /
-        header > <
-        /div>
-    );
-}
+            <
+            /a> <
+            /header> <
+            /div>
+        );
+    }
 
-export default App;
+
+
+    export default App;
