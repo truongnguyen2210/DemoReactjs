@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Todoitem from './Components/Todoitem';
 let todos = [
-    "Learn English",
-    "Learn JavaScript",
-    "Learn English",
-    "Learn Reactjs"
+    { title: "Learn English", none: true },
+    { title: "Learn JavaScript", none: false },
+    { title: "Learn English", none: true },
+    { title: "Learn Reactjs", none: false }
 ];
 
 function App() {
@@ -15,17 +15,16 @@ function App() {
         <
         header className = "App-header" >
         <
+        h3 className = "Title-header" > Todo List < /h3> <
         img src = { logo }
         className = "App-logo"
-        alt = "logo" / >
-        <
-        p > {
-            todos.map((item, index) => < Todoitem key = { index }
-                title = { item }
+        alt = "logo" / > {
+            todos.map((item, index) =>
+                <
+                Todoitem key = { index }
+                item = { item }
                 />)
-            }
-            Edit < code > src / App.js < /code> and save to reload. <
-            /p> <
+            } <
             a
             className = "App-link"
             href = "https://reactjs.org"
