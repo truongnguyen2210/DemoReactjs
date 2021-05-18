@@ -11,33 +11,29 @@ let todos = [
 
 function App() {
     return ( <
-        div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        h3 className = "Title-header" > Todo List < /h3> <
-        img src = { logo }
-        className = "App-logo"
-        alt = "logo" / > {
-            todos.map((item, index) =>
-                <
-                Todoitem key = { index }
-                item = { item }
-                />)
-            } <
-            a
-            className = "App-link"
-            href = "https://reactjs.org"
-            target = "_blank"
-            rel = "noopener noreferrer" >
-
+            div className = "App" >
             <
-            /a> <
-            /header> <
-            /div>
-        );
-    }
+            header className = "App-header" >
+            <
+            h3 className = "Title-header" > Todo List < /h3> <
+            img src = { logo }
+            className = "App-logo"
+            alt = "logo" / > {
+                todos.length > 0 && todos.map((item, index) => < Todoitem key = { index }
+                    item = { item }
+                    />)} { todos.length == 0 && 'Nothing here??' } <
+                    a className = "App-link"
+                    href = "https://reactjs.org"
+                    target = "_blank"
+                    rel = "noopener noreferrer" >
+
+                    <
+                    /a> <
+                    /header> <
+                    /div>
+                );
+            }
 
 
 
-    export default App;
+            export default App;
