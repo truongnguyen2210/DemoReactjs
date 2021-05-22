@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import './Todoitem.css';
 class Todoitem extends Component {
     render() {
-        const { item } = this.props;
-        let className = "Todoitem";
-        if (item.none) {
-            className += " Todoitem-None"
-        }
+        const { item, onClick } = this.props;
         return ( <
-            div className = { className } >
+            div onClick = { onClick }
+            className = {
+                classNames('Todoitem', {
+                    TodoitemNone: item.none == true,
+                })
+            } >
             <
             p > { this.props.item.title } < /p> <
             /div>

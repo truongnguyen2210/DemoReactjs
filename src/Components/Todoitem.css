@@ -20,7 +20,7 @@
     color: rgb(211, 227, 240);
 }
 
-.Todoitem-None {
+.TodoitemNone {
     text-decoration: line-through;
     color: rgb(112, 109, 109)
 }
