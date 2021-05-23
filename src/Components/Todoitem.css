@@ -3,13 +3,26 @@
     padding: 0;
 }
 
+.Todo {
+    width: 450px;
+    height: auto;
+    border: 1px solid rgb(160, 212, 228);
+    background-color: #0963a8;
+    border-radius: 2px;
+}
+
 .Todoitem {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(241, 233, 233);
-    padding-bottom: 20px;
+    padding: 13px;
+}
+
+.Todoitem>p {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .Title-header {
@@ -22,5 +35,5 @@
 
 .TodoitemNone {
     text-decoration: line-through;
-    color: rgb(112, 109, 109)
+    color: #4f5a5f
 }
